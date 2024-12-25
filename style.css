@@ -100,11 +100,13 @@ html, body{
     cursor: pointer;
     border: 2px solid rgb(136, 136, 136);
     border-radius: 4px;
+    
 }
 
 .modes >input:hover{
-    background-color: rgb(5, 122, 239);
-    border-radius: 50px;
+    /*background-color: rgb(5, 122, 239);*/
+    background-color: #2A0AF2;
+    border-radius: 30px;
     color: white;
     border-color: aqua;
     box-shadow: 0 0 2rem rgb(42, 41, 41)
