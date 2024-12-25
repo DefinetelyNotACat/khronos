@@ -1,0 +1,134 @@
+*{
+    font-family: 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+#mode{
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+#center{
+    text-align: center;
+}
+#right{
+    text-align: right;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #32b2fcf4;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+}
+
+.clock-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.square{
+   
+    /*
+    max-width: 550px;
+    max-height: 450px;
+       aspect-ratio:  4/3;
+ ;*/
+    width: min(650px,90%);
+    height: min(500px,90%);
+    background-color: #ebf5fa;
+    border-radius: 50px;
+    margin: 0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.timecontainer{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 3rem;
+   
+}
+
+.clock{
+    width: max-content;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.2em;
+    visibility: hidden;
+}
+#timer{
+    text-align: center;
+    font-size: 4rem;
+   
+}
+.modes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1em;
+}
+.modes > input{
+    background: transparent;
+    border: transparent;
+    padding: 2rem;
+    font-size: 1.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 4px;
+}
+
+.modes >input:hover{
+    background-color: rgb(5, 122, 239);
+    border-radius: 50px;
+    color: white;
+    border-color: aqua;
+    box-shadow: 0 0 2rem rgb(42, 41, 41)
+}
+
+.topbar{
+    width: 100%;
+    display: flex;
+    padding: 0rem 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 376px) {
+    .square{
+        width: 250px;
+        height: 150px;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 600px) {
+  
+  }
