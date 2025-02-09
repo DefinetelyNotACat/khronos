@@ -41,11 +41,6 @@ html, body{
 
 .square{
    
-    /*
-    max-width: 550px;
-    max-height: 450px;
-       aspect-ratio:  4/3;
- ;*/
     width: min(650px,90%);
     height: min(500px,90%);
     background-color: #ebf5fa;
@@ -55,7 +50,8 @@ html, body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1.2rem 2rem;
+    
 }
 
 .timecontainer{
@@ -68,6 +64,18 @@ html, body{
    
 }
 
+.buttons_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.buttons_list > a{
+    padding: 0.4em 2em;
+    border: 5px solid black;
+    border-radius: 20px;
+    height: min-content;
+}
 .clock{
     width: max-content;
     height: 100%;
@@ -83,7 +91,6 @@ html, body{
 #timer{
     text-align: center;
     font-size: 4rem;
-   
 }
 .modes{
     display: flex;
@@ -94,7 +101,7 @@ html, body{
 .modes > input{
     background: transparent;
     border: transparent;
-    padding: 2rem;
+    padding: 1.7rem;
     font-size: 1.5rem;
     transition: 0.2s;
     cursor: pointer;
